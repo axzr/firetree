@@ -1,0 +1,1 @@
+var firetreeApp = angular.module("firetreeApp", ["firebase"]);

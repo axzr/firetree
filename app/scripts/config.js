@@ -8,11 +8,19 @@ angular.module('firetreeApp')
   $stateProvider.state('main', {
     url: '/',
     templateUrl: '/views/main.html',
-    controller: 'MainCtrl'
-  }).state('file', {
-    url: '/:id',
-    templateUrl: '/views/main.html',
-    controller: 'MainCtrl'
+    controller: 'MainController'
+  }).state('firebasename', {
+    url: '/:firebasename',
+    templateUrl: '/views/subkeys.html',
+    controller: 'MainController'
+  }).state('depth1', {
+    url: '/:firebasename/:id1',
+    templateUrl: '/views/ready.html',
+    controller: 'MainController'
+  }).state('depth2', {
+    url: '/:firebasename/:id1/:id2',
+    templateUrl: '/views/ready.html',
+    controller: 'MainController'
   });
 
   $urlRouterProvider.otherwise('/');

@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <span class="step">1</span>
+            Enter your firebase name:
+            <input type="text" name="firebasename" ng-model="firebasename"/>
+            <button type="button" class="btn btn-default" ng-click="openFirebase()">Next</button>
+        </div>   
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <span class="step">2</span>
+            (optional) Enter a subkey or function <span class="help">?</span> :
+            <ul>
+                <li ng-repeat="subkey in subkeys">{{subkey}}</li>
+            </ul>
+            <input type="text" name="subkey" ng-model="subkey"/>
+            <button type="button" class="btn btn-default" ng-click="addSubkey()">Add</button>
+        </div>   
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <span class="step">3</span>
+            (optional) View the data
+            <button type="button" class="btn btn-default" ng-click="view()">View</button>
+        </div>   
+    </div>
+</div>

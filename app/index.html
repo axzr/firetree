@@ -5,17 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">        
         <title>Firetree</title>
-        <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
-        <script type="text/javascript" src="/bower_components/firebase/firebase.js"></script>
-        <script type="text/javascript" src="/bower_components/angularfire/dist/angularfire.min.js"></script>
-        <script type="text/javascript" src="/scripts/app.js"></script>
+        <base href="/">
         <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" type="text/css" />
         <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.css" type="text/css" />
+        <script src="/__/env.js"></script>
     </head>
     
     <body>
-        <div class="container">
-            <h1>Welcome</h1>
-        </div>
+        <section class="main">
+            <div class="container" ui-view></div>
+        </section>
+
+        <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="/bower_components/firebase/firebase.js"></script>
+        <script type="text/javascript" src="/bower_components/angularfire/dist/angularfire.js"></script>
+        <script type="text/javascript" src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    
+        <script src="/scripts/app.js"></script>
+        <script src="/scripts/config.js"></script>
+        <script src="/scripts/controllers/main.js"></script>
     </body>
 </html>

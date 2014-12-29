@@ -1,0 +1,20 @@
+{
+  "name": "firetree",
+  "version": "0.0.0",
+  "homepage": "https://github.com/axzr/firetree",
+  "authors": [
+    "axzr <ad@mrbrooks.org>"
+  ],
+  "description": "Tools for searching, filtering and tweaking Firebases",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1"
+  }
+}
